@@ -1,0 +1,9 @@
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\bin\Debug\LotterySoftware.exe
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\bin\Debug\LotterySoftware.pdb
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.csprojAssemblyReference.cache
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.frmMain.resources
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.Properties.Resources.resources
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.csproj.GenerateResource.cache
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.csproj.CoreCompileInputs.cache
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.exe
+D:\MyData\C#Code\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.pdb
