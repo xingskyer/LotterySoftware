@@ -20,5 +20,53 @@ namespace LotterySoftware
         {
 
         }
+
+        private void tsbAddPersonnel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbModifyPersonnel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbCancelPersonnel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbSavePersonnel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbDeletePersonnel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tsbExit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPersonnelNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbbPersonnelActive_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvDataList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

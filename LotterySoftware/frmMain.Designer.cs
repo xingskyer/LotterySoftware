@@ -399,6 +399,7 @@
             this.cbbGiftType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbGiftType.FormattingEnabled = true;
             this.cbbGiftType.Items.AddRange(new object[] {
+            " ",
             "按礼品",
             "按等级",
             "按人员"});

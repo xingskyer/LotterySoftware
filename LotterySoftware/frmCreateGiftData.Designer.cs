@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateGiftData));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvDataList = new System.Windows.Forms.DataGridView();
@@ -58,12 +58,12 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvDataList);
-            this.groupBox2.Location = new System.Drawing.Point(0, 120);
+            this.groupBox2.Location = new System.Drawing.Point(10, 120);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(662, 247);
             this.groupBox2.TabIndex = 242;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "现在礼品信息";
+            this.groupBox2.Text = "现在奖品信息";
             // 
             // dgvDataList
             // 
@@ -73,23 +73,23 @@
             this.dgvDataList.AllowUserToResizeRows = false;
             this.dgvDataList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvDataList.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDataList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDataList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDataList.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDataList.Location = new System.Drawing.Point(10, 18);
             this.dgvDataList.Name = "dgvDataList";
             this.dgvDataList.ReadOnly = true;
@@ -98,6 +98,7 @@
             this.dgvDataList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDataList.Size = new System.Drawing.Size(646, 221);
             this.dgvDataList.TabIndex = 88;
+            this.dgvDataList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataList_CellClick);
             // 
             // groupBox1
             // 
@@ -107,7 +108,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtGiftCount);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(0, 59);
+            this.groupBox1.Location = new System.Drawing.Point(10, 59);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(662, 51);
             this.groupBox1.TabIndex = 241;
@@ -134,6 +135,7 @@
             this.cbbGiftActive.Name = "cbbGiftActive";
             this.cbbGiftActive.Size = new System.Drawing.Size(121, 20);
             this.cbbGiftActive.TabIndex = 6;
+            this.cbbGiftActive.SelectedValueChanged += new System.EventHandler(this.cbbGiftActive_SelectedValueChanged);
             // 
             // txtGiftName
             // 
@@ -149,7 +151,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "礼品名称";
+            this.label1.Text = "奖品名称";
             // 
             // txtGiftCount
             // 
@@ -157,6 +159,7 @@
             this.txtGiftCount.Name = "txtGiftCount";
             this.txtGiftCount.Size = new System.Drawing.Size(91, 21);
             this.txtGiftCount.TabIndex = 5;
+            this.txtGiftCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiftCount_KeyPress);
             // 
             // label3
             // 
@@ -165,7 +168,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 4;
-            this.label3.Text = "礼品数量";
+            this.label3.Text = "奖品数量";
             // 
             // toolStrip1
             // 
@@ -184,7 +187,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(672, 56);
+            this.toolStrip1.Size = new System.Drawing.Size(681, 56);
             this.toolStrip1.TabIndex = 240;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -201,8 +204,9 @@
             this.tsbAddGift.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAddGift.Name = "tsbAddGift";
             this.tsbAddGift.Size = new System.Drawing.Size(60, 53);
-            this.tsbAddGift.Text = "添加礼品";
+            this.tsbAddGift.Text = "添加奖品";
             this.tsbAddGift.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbAddGift.Click += new System.EventHandler(this.tsbAddGift_Click);
             // 
             // tsbModifyGift
             // 
@@ -211,8 +215,9 @@
             this.tsbModifyGift.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbModifyGift.Name = "tsbModifyGift";
             this.tsbModifyGift.Size = new System.Drawing.Size(60, 53);
-            this.tsbModifyGift.Text = "修改礼品";
+            this.tsbModifyGift.Text = "修改奖品";
             this.tsbModifyGift.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbModifyGift.Click += new System.EventHandler(this.tsbModifyGift_Click);
             // 
             // tsbCancel
             // 
@@ -223,6 +228,7 @@
             this.tsbCancel.Size = new System.Drawing.Size(60, 53);
             this.tsbCancel.Text = "取消修改";
             this.tsbCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbCancel.Click += new System.EventHandler(this.tsbCancel_Click);
             // 
             // tsbSaveGift
             // 
@@ -231,8 +237,9 @@
             this.tsbSaveGift.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSaveGift.Name = "tsbSaveGift";
             this.tsbSaveGift.Size = new System.Drawing.Size(60, 53);
-            this.tsbSaveGift.Text = "保存礼品";
+            this.tsbSaveGift.Text = "保存奖品";
             this.tsbSaveGift.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbSaveGift.Click += new System.EventHandler(this.tsbSaveGift_Click);
             // 
             // toolStripSeparator2
             // 
@@ -245,8 +252,9 @@
             this.tsbDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDelete.Name = "tsbDelete";
             this.tsbDelete.Size = new System.Drawing.Size(60, 53);
-            this.tsbDelete.Text = "删除礼品";
+            this.tsbDelete.Text = "删除奖品";
             this.tsbDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbDelete.Click += new System.EventHandler(this.tsbDelete_Click);
             // 
             // tsbExit
             // 
@@ -256,13 +264,14 @@
             this.tsbExit.Size = new System.Drawing.Size(36, 53);
             this.tsbExit.Text = "退出";
             this.tsbExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbExit.Click += new System.EventHandler(this.tsbExit_Click);
             // 
             // frmCreateGiftData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(672, 377);
+            this.ClientSize = new System.Drawing.Size(681, 377);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);

@@ -24,21 +24,47 @@ namespace LotterySoftware
             dgvDataList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells; // 设定包括Header和所有单元格的列宽自动调整
             dgvDataList.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.False;  //设置列标题不换行,设定不包括Header所有单元格的行高自动调整
             dgvDataList.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;  //AllCells;设定包括Header和所有单元格的行高自动调整    
+
+            dgvDataList.DataSource = null;
+            dgvDataList.Visible = false;
+            gbGiftType.Visible = false;
+            btnStartGift.Enabled = false;
+            btnStopGift.Enabled = false;
         }
 
         private void cbbGiftType_SelectedValueChanged(object sender, EventArgs e)
         {
+            switch (cbbGiftType.Text.Trim())
+            {
+                case "按礼品":
+                    break;
+                case "按等级":
+                    gbGiftType.Visible = true;
 
+                    break;
+                case "按人员":
+                    break;
+                default:
+                    dgvDataList.DataSource = null;
+                    dgvDataList.Visible = false;
+                    gbGiftType.Visible = false;
+                    btnStartGift.Enabled = false;
+                    btnStopGift.Enabled = false;
+                    break;
+
+            }
         }
-
+        
         private void btnStartGift_Click(object sender, EventArgs e)
         {
-
+            btnStopGift.Enabled = true;
+            btnStartGift.Enabled = false;
         }
 
         private void btnStopGift_Click(object sender, EventArgs e)
         {
-
+            btnStartGift.Enabled = true;
+            btnStopGift.Enabled = false;
         }
 
         private void rbSuperGift_MouseClick(object sender, MouseEventArgs e)
@@ -83,42 +109,66 @@ namespace LotterySoftware
 
         private void txtSuperGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtGrandGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtLevelOneGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtLevelTwoGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtLevelThreeGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtLevelFourGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtLevelFiveGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void txtComfortGift_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar != 8 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void TSMGiftEntry_Click(object sender, EventArgs e)
@@ -135,7 +185,8 @@ namespace LotterySoftware
 
         private void TSMAbout_Click(object sender, EventArgs e)
         {
-
+            FrmAbout frmAbout = new FrmAbout();
+            frmAbout.ShowDialog();
         }
 
         private void TSMChinese_Click(object sender, EventArgs e)

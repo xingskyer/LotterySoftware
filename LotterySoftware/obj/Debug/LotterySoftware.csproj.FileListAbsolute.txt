@@ -13,10 +13,10 @@ D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\bin\Debug\LotterySoftwa
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.csprojAssemblyReference.cache
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.FrmAbout.resources
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.frmCreateGiftData.resources
-D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.frmCreateHumanData.resources
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.frmMain.resources
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.Properties.Resources.resources
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.csproj.GenerateResource.cache
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.csproj.CoreCompileInputs.cache
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.exe
 D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.pdb
+D:\My_Project\c#_Project\LotterySoftware\LotterySoftware\obj\Debug\LotterySoftware.frmCreatePersonnelData.resources
