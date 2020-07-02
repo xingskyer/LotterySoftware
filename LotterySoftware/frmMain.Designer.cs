@@ -65,14 +65,14 @@
             this.btnStopGift = new System.Windows.Forms.Button();
             this.lblInformation = new System.Windows.Forms.Label();
             this.menuMain = new System.Windows.Forms.MenuStrip();
-            this.基本设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.录入礼品ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.录入人员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.语言ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.中文简体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMBaseSet = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMGiftEntry = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMPersonnelEntry = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMChangeLanguage = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMChinese = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMEnglish = new System.Windows.Forms.ToolStripMenuItem();
             this.gbGiftType.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDataList)).BeginInit();
             this.menuMain.SuspendLayout();
@@ -505,70 +505,75 @@
             // menuMain
             // 
             this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.基本设置ToolStripMenuItem,
-            this.帮助HToolStripMenuItem,
-            this.语言ToolStripMenuItem});
+            this.TSMBaseSet,
+            this.TSMHelp,
+            this.TSMChangeLanguage});
             this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
             this.menuMain.Size = new System.Drawing.Size(1350, 25);
             this.menuMain.TabIndex = 106;
             this.menuMain.Text = "menuStrip1";
             // 
-            // 基本设置ToolStripMenuItem
+            // TSMBaseSet
             // 
-            this.基本设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.录入礼品ToolStripMenuItem,
-            this.录入人员ToolStripMenuItem});
-            this.基本设置ToolStripMenuItem.Name = "基本设置ToolStripMenuItem";
-            this.基本设置ToolStripMenuItem.Size = new System.Drawing.Size(88, 21);
-            this.基本设置ToolStripMenuItem.Text = " 基本设置(&B)";
+            this.TSMBaseSet.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMGiftEntry,
+            this.TSMPersonnelEntry});
+            this.TSMBaseSet.Name = "TSMBaseSet";
+            this.TSMBaseSet.Size = new System.Drawing.Size(88, 21);
+            this.TSMBaseSet.Text = " 基本设置(&B)";
             // 
-            // 录入礼品ToolStripMenuItem
+            // TSMGiftEntry
             // 
-            this.录入礼品ToolStripMenuItem.Name = "录入礼品ToolStripMenuItem";
-            this.录入礼品ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.录入礼品ToolStripMenuItem.Text = "录入礼品(&G)";
+            this.TSMGiftEntry.Name = "TSMGiftEntry";
+            this.TSMGiftEntry.Size = new System.Drawing.Size(180, 22);
+            this.TSMGiftEntry.Text = "录入礼品(&G)";
+            this.TSMGiftEntry.Click += new System.EventHandler(this.TSMGiftEntry_Click);
             // 
-            // 录入人员ToolStripMenuItem
+            // TSMPersonnelEntry
             // 
-            this.录入人员ToolStripMenuItem.Name = "录入人员ToolStripMenuItem";
-            this.录入人员ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.录入人员ToolStripMenuItem.Text = "录入人员(&P)";
+            this.TSMPersonnelEntry.Name = "TSMPersonnelEntry";
+            this.TSMPersonnelEntry.Size = new System.Drawing.Size(180, 22);
+            this.TSMPersonnelEntry.Text = "录入人员(&P)";
+            this.TSMPersonnelEntry.Click += new System.EventHandler(this.TSMPersonnelEntry_Click);
             // 
-            // 语言ToolStripMenuItem
+            // TSMHelp
             // 
-            this.语言ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.中文简体ToolStripMenuItem,
-            this.englishToolStripMenuItem});
-            this.语言ToolStripMenuItem.Name = "语言ToolStripMenuItem";
-            this.语言ToolStripMenuItem.Size = new System.Drawing.Size(58, 21);
-            this.语言ToolStripMenuItem.Text = "语言(&L)";
+            this.TSMHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMAbout});
+            this.TSMHelp.Name = "TSMHelp";
+            this.TSMHelp.Size = new System.Drawing.Size(61, 21);
+            this.TSMHelp.Text = "帮助(&H)";
             // 
-            // 中文简体ToolStripMenuItem
+            // TSMAbout
             // 
-            this.中文简体ToolStripMenuItem.Name = "中文简体ToolStripMenuItem";
-            this.中文简体ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.中文简体ToolStripMenuItem.Text = "中文(简体)(&C)";
+            this.TSMAbout.Name = "TSMAbout";
+            this.TSMAbout.Size = new System.Drawing.Size(180, 22);
+            this.TSMAbout.Text = "关于(&A)";
+            this.TSMAbout.Click += new System.EventHandler(this.TSMAbout_Click);
             // 
-            // englishToolStripMenuItem
+            // TSMChangeLanguage
             // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.englishToolStripMenuItem.Text = "English(&E)";
+            this.TSMChangeLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMChinese,
+            this.TSMEnglish});
+            this.TSMChangeLanguage.Name = "TSMChangeLanguage";
+            this.TSMChangeLanguage.Size = new System.Drawing.Size(58, 21);
+            this.TSMChangeLanguage.Text = "语言(&L)";
             // 
-            // 帮助HToolStripMenuItem
+            // TSMChinese
             // 
-            this.帮助HToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.关于AToolStripMenuItem});
-            this.帮助HToolStripMenuItem.Name = "帮助HToolStripMenuItem";
-            this.帮助HToolStripMenuItem.Size = new System.Drawing.Size(61, 21);
-            this.帮助HToolStripMenuItem.Text = "帮助(&H)";
+            this.TSMChinese.Name = "TSMChinese";
+            this.TSMChinese.Size = new System.Drawing.Size(180, 22);
+            this.TSMChinese.Text = "中文(简体)(&C)";
+            this.TSMChinese.Click += new System.EventHandler(this.TSMChinese_Click);
             // 
-            // 关于AToolStripMenuItem
+            // TSMEnglish
             // 
-            this.关于AToolStripMenuItem.Name = "关于AToolStripMenuItem";
-            this.关于AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.关于AToolStripMenuItem.Text = "关于(&A)";
+            this.TSMEnglish.Name = "TSMEnglish";
+            this.TSMEnglish.Size = new System.Drawing.Size(180, 22);
+            this.TSMEnglish.Text = "English(&E)";
+            this.TSMEnglish.Click += new System.EventHandler(this.TSMEnglish_Click);
             // 
             // frmMain
             // 
@@ -637,14 +642,14 @@
         private System.Windows.Forms.Button btnStopGift;
         private System.Windows.Forms.Label lblInformation;
         private System.Windows.Forms.MenuStrip menuMain;
-        private System.Windows.Forms.ToolStripMenuItem 基本设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 录入礼品ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 录入人员ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 帮助HToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 关于AToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 语言ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 中文简体ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TSMBaseSet;
+        private System.Windows.Forms.ToolStripMenuItem TSMGiftEntry;
+        private System.Windows.Forms.ToolStripMenuItem TSMPersonnelEntry;
+        private System.Windows.Forms.ToolStripMenuItem TSMHelp;
+        private System.Windows.Forms.ToolStripMenuItem TSMAbout;
+        private System.Windows.Forms.ToolStripMenuItem TSMChangeLanguage;
+        private System.Windows.Forms.ToolStripMenuItem TSMChinese;
+        private System.Windows.Forms.ToolStripMenuItem TSMEnglish;
     }
 }
 

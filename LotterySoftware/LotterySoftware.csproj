@@ -46,17 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCreateGiftData.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCreateGiftData.Designer.cs">
       <DependentUpon>frmCreateGiftData.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCreateHumanData.cs">
+    <Compile Include="frmCreatePersonnelData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCreateHumanData.Designer.cs">
-      <DependentUpon>frmCreateHumanData.cs</DependentUpon>
+    <Compile Include="frmCreatePersonnelData.Designer.cs">
+      <DependentUpon>frmCreatePersonnelData.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -66,11 +73,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreateGiftData.resx">
       <DependentUpon>frmCreateGiftData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateHumanData.resx">
-      <DependentUpon>frmCreateHumanData.cs</DependentUpon>
+    <EmbeddedResource Include="frmCreatePersonnelData.resx">
+      <DependentUpon>frmCreatePersonnelData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -95,8 +105,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GiftData.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Home.ico" />
-    <Content Include="MyData\Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\" />
+    <Folder Include="Sound\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

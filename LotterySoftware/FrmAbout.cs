@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace LotterySoftware
 {
-    public partial class frmCreateHumanData : Form
+    public partial class FrmAbout : Form
     {
-        public frmCreateHumanData()
+        public FrmAbout()
         {
             InitializeComponent();
         }

@@ -120,5 +120,32 @@ namespace LotterySoftware
         {
 
         }
+
+        private void TSMGiftEntry_Click(object sender, EventArgs e)
+        {
+            frmCreateGiftData frmCreateGiftData = new frmCreateGiftData();
+            frmCreateGiftData.ShowDialog();
+        }
+
+        private void TSMPersonnelEntry_Click(object sender, EventArgs e)
+        {
+            frmCreatePersonnelData frmCreatePersonnelData = new frmCreatePersonnelData();
+            frmCreatePersonnelData.ShowDialog();
+        }
+
+        private void TSMAbout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TSMChinese_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TSMEnglish_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

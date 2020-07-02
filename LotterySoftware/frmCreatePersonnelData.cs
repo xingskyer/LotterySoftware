@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace LotterySoftware
 {
-    public partial class frmCreateGiftData : Form
+    public partial class frmCreatePersonnelData : Form
     {
-        public frmCreateGiftData()
+        public frmCreatePersonnelData()
         {
             InitializeComponent();
         }
 
-        private void frmCreateGiftData_Load(object sender, EventArgs e)
+        private void frmCreateHumanData_Load(object sender, EventArgs e)
         {
 
         }
